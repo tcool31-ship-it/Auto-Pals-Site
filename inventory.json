@@ -1,0 +1,70 @@
+{
+  "vehicles": [
+    {
+      "id": 1001,
+      "featured": true,
+      "year": 2019,
+      "make": "Toyota",
+      "model": "Camry SE",
+      "type": "Sedan",
+      "price": 19950,
+      "mileage": 54200,
+      "transmission": "Automatic",
+      "drivetrain": "FWD",
+      "fuel": "Gasoline",
+      "color": "Celestial Silver",
+      "interior": "Black Fabric",
+      "vin": "4T1B11HK3KU123456",
+      "images": [
+        "https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=1600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=1600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1600&auto=format&fit=crop"
+      ],
+      "notes": "SE package, Apple CarPlay, lane assist, single owner, clean history."
+    },
+    {
+      "id": 1002,
+      "featured": true,
+      "year": 2021,
+      "make": "Ford",
+      "model": "F-150 XLT",
+      "type": "Truck",
+      "price": 34900,
+      "mileage": 38800,
+      "transmission": "Automatic",
+      "drivetrain": "4WD",
+      "fuel": "Gasoline",
+      "color": "Oxford White",
+      "interior": "Gray Cloth",
+      "vin": "1FTEW1EP5MFA12345",
+      "images": [
+        "https://images.unsplash.com/photo-1584345604476-8ec5e12b8d93?q=80&w=1600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1590362891991-f776e747a588?q=80&w=1600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1542281286-9e0a16bb7366?q=80&w=1600&auto=format&fit=crop"
+      ],
+      "notes": "XLT 4x4, tow package, bedliner, remote start."
+    },
+    {
+      "id": 1003,
+      "featured": true,
+      "year": 2018,
+      "make": "BMW",
+      "model": "330i",
+      "type": "Sedan",
+      "price": 21500,
+      "mileage": 62250,
+      "transmission": "Automatic",
+      "drivetrain": "RWD",
+      "fuel": "Gasoline",
+      "color": "Alpine White",
+      "interior": "Black Dakota Leather",
+      "vin": "WBA8B9G57JNU12345",
+      "images": [
+        "https://images.unsplash.com/photo-1519848446995-5cc6f4b21f9a?q=80&w=1600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1550355291-bbee04a92027?q=80&w=1600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1600&auto=format&fit=crop"
+      ],
+      "notes": "M\u2011Sport pkg, nav, heated seats, recent service."
+    }
+  ]
+}
