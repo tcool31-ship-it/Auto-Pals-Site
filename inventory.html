@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Auto Pals LLC — Columbia, SC</title>
+  <meta name="description" content="Auto Pals LLC — Quality pre-owned cars in Columbia, SC. Buy, sell, or consign.">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/index.html" class="logo">Auto <span>Pals</span> LLC</a>
+    <nav class="nav" id="nav">
+      <a href="/inventory.html">Inventory</a>
+      <a href="/sell.html">Sell/Consign</a>
+      <a href="/financing.html">Financing</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+    <button class="menu-btn" aria-label="Toggle navigation" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+  </div>
+</header>
+<main>
+
+<section class="subhero">
+  <div class="container">
+    <h1>Inventory</h1>
+    <p>A curated selection of quality pre‑owned vehicles. New arrivals weekly.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container inventory-layout">
+    <aside class="filters">
+      <h3>Filter</h3>
+      <label>Search
+        <input type="search" id="search" placeholder="Make, model, keyword…" />
+      </label>
+      <label>Type
+        <select id="type">
+          <option value="">Any</option>
+          <option>Sedan</option>
+          <option>Coupe</option>
+          <option>SUV</option>
+          <option>Truck</option>
+          <option>Convertible</option>
+          <option>Wagon</option>
+          <option>Van</option>
+          <option>Other</option>
+        </select>
+      </label>
+      <div class="row">
+        <label>Year (min)
+          <input type="number" id="yearMin" placeholder="2000" min="1950" max="2050" />
+        </label>
+        <label>Year (max)
+          <input type="number" id="yearMax" placeholder="2026" min="1950" max="2050" />
+        </label>
+      </div>
+      <div class="row">
+        <label>Price (min)
+          <input type="number" id="priceMin" placeholder="5000" step="500" />
+        </label>
+        <label>Price (max)
+          <input type="number" id="priceMax" placeholder="75000" step="500" />
+        </label>
+      </div>
+      <div class="row">
+        <label>Mileage (max)
+          <input type="number" id="mileageMax" placeholder="150000" step="1000" />
+        </label>
+      </div>
+      <button class="btn small" id="clearFilters">Clear Filters</button>
+    </aside>
+
+    <div class="results">
+      <div class="results-bar">
+        <span id="count"></span>
+        <label>Sort by
+          <select id="sort">
+            <option value="featured">Featured</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="year-desc">Year: New to Old</option>
+            <option value="year-asc">Year: Old to New</option>
+            <option value="mileage-asc">Mileage: Low to High</option>
+            <option value="mileage-desc">Mileage: High to Low</option>
+          </select>
+        </label>
+      </div>
+      <div id="inventory-grid" class="vehicle-grid"></div>
+      <div class="pagination" id="pagination"></div>
+    </div>
+  </div>
+</section>
+<script src="/assets/js/inventory.js"></script>
+<script>
+  // Render full inventory with filters
+  renderInventory('#inventory-grid', { countEl: '#count', paginationEl: '#pagination' });
+</script>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Auto Pals LLC</h4>
+      <p>6713 Two Notch Rd<br/>Columbia, SC 29223</p>
+      <p><a href="tel:+18034671416">803-467-1416</a></p>
+      <p><a href="mailto:info@autopalsllc.com">info@autopalsllc.com</a></p>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <ul class="hours">
+        <li>Mon–Fri: 9:00–6:00</li>
+        <li>Sat: 10:00–4:00</li>
+        <li>Sun: By Appointment</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul class="links">
+        <li><a href="/inventory.html">Inventory</a></li>
+        <li><a href="/sell.html">Sell/Consign</a></li>
+        <li><a href="/financing.html">Financing</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/privacy.html">Privacy</a></li>
+        <li><a href="/terms.html">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container subfooter">
+    <small>© <span id="year"></span> Auto Pals LLC. All rights reserved. Columbia’s trusted used car dealer.</small>
+  </div>
+</footer>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
